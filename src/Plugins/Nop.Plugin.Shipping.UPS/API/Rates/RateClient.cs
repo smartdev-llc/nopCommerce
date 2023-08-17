@@ -3604,10 +3604,7 @@ namespace Nop.Plugin.Shipping.UPS.API.Rates
         [Newtonsoft.Json.JsonProperty("RateChart", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         [System.ComponentModel.DataAnnotations.StringLength(1, MinimumLength = 1)]
         public string RateChart { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("RatedShipmentAlert", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public System.Collections.Generic.ICollection<RatedShipment_RatedShipmentAlert> RatedShipmentAlert { get; set; }
-
+        
         /// <summary>
         /// Indicates whether the billable weight calculation method is utilized at the package or shipment level.  This information will be returned only if RatingMethodRequestedIndicator is present in the request.  Possible values:01 = Shipment Billable Weight02 = Package Billable Weight
         /// </summary>
