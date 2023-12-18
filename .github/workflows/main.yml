@@ -56,9 +56,9 @@ jobs:
         -e EKS_IMAGE_REPOSITORY=$ECR_REGISTRY \
         -e EKS_CONTAINER_PORT=8080 \
         -e EKS_CONTAINER_HEALTH_CHECK_PATH='\' \
-        -e RESOURCE_LIMITS_CPU=2000m \
-        -e RESOURCE_LIMITS_MEMORY=6Gi \
-        -e RESOURCE_REQUEST_CPU=1000m \
-        -e RESOURCE_REQUEST_MEMORY=4Gi \
+        -e RESOURCE_LIMITS_CPU=1000m \
+        -e RESOURCE_LIMITS_MEMORY=2Gi \
+        -e RESOURCE_REQUEST_CPU=500m \
+        -e RESOURCE_REQUEST_MEMORY=1Gi \
         -e EKS_NAMESPACE='prj-portfolio-nopcommerce' \
         qitpy/aws-eks-helm-deploy:1.4
