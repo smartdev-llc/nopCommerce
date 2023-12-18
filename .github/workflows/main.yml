@@ -2,7 +2,7 @@ name: Deploy to Amazon EKS
 
 on:
   push:
-    branches: [ "develop", "ci/setup" ]
+    branches: [ "develop", "ci/setup", "develop_4.6" ]
 
 env:
   DOCKER_IMAGE: portfolio-nopcommerce-dev    # set this to your application's name
